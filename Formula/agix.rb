@@ -1,22 +1,22 @@
 class Agix < Formula
   desc "Agent Graph IndeX — universal package manager for AI CLI tools"
   homepage "https://github.com/fantoine/agix"
-  version "0.1.3"
+  version "0.1.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/fantoine/agix/releases/download/v0.1.3/agix-aarch64-apple-darwin.tar.xz"
-      sha256 "4b340420525ca90ed25fa4f895db3674edc0d780f6ae81a4548f30a66b79c626"
+      url "https://github.com/fantoine/agix/releases/download/v0.1.4/agix-aarch64-apple-darwin.tar.xz"
+      sha256 "e20e32ec68271e7c4100c418bdfd4d24f30687a8b4816e0d3497daba81d6fe84"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fantoine/agix/releases/download/v0.1.3/agix-x86_64-apple-darwin.tar.xz"
-      sha256 "9f2e16b95a03e6c1d99887d14e84e11522742b34d265658626e249e9765ddc00"
+      url "https://github.com/fantoine/agix/releases/download/v0.1.4/agix-x86_64-apple-darwin.tar.xz"
+      sha256 "eae51cb3d4a0f7e1cb8983135b11b54e03c89749518faf4febfe6ed878d133c2"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/fantoine/agix/releases/download/v0.1.3/agix-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "7fd3f518a4962e36fefbda148c6daccc88c0086f6b5a5ba1f4bc4fd3e5eafd93"
+    url "https://github.com/fantoine/agix/releases/download/v0.1.4/agix-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "59abbd4951aa0e066fe71a7d91e3d0cc7102e4ceb996cfc7794b9ce28d0468f1"
   end
-  license "MIT"
+  license "Apache-2.0"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":     {},
